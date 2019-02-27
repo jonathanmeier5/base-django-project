@@ -9,6 +9,11 @@ compose-flow = "*"
 [packages]
 django = "*"
 djangorestframework = "*"
+dj-database-url = "*"
+django-extensions = "*"
+django-fsm = "*"
+django-simple-history = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.6"
