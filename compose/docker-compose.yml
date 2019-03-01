@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  app:
+    build:
+      args:
+        - PROJECT_NAME=${CF_PROJECT}
+      context: ..
+    image: ${DOCKER_IMAGE}
