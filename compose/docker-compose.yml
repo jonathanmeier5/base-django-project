@@ -3,6 +3,6 @@ services:
   app:
     build:
       args:
-        - PROJECT_NAME=${CF_PROJECT}
+        - CF_PROJECT=${CF_PROJECT}
       context: ..
     image: ${DOCKER_IMAGE}

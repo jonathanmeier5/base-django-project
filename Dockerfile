@@ -1,9 +1,9 @@
 FROM python:3.6-stretch
 MAINTAINER Jonathan Meier <jonathan.w.meier@gmail.com)
 
-ARG PROJECT_NAME
+ARG CF_PROJECT
 
-ENV SRC_DIR /usr/local/src/$PROJECT_NAME
+ENV SRC_DIR /usr/local/src/$CF_PROJECT
 WORKDIR ${SRC_DIR}
 
 RUN pip3 install pipenv
