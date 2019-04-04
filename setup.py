@@ -15,6 +15,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/jonathanmeier5/base-django-project",
     packages=setuptools.find_packages(SOURCE_DIR),
+    package_dir={'':'src'},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
