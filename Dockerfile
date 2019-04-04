@@ -15,6 +15,6 @@ RUN pipenv install --system --dev && \
 
 COPY ./ ${SRC_DIR}/
 
-COPY ./scripts/wait-for-it.sh /usr/local/bin
+COPY ./scripts/* /usr/local/bin/
 RUN chmod u+x /usr/local/bin/*
 
