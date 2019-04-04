@@ -4,3 +4,7 @@ profiles:
     - env
     - local
     - postgres
+
+tasks:
+  publish:
+    command: compose-flow compose run -u root:docker --rm app /bin/bash ./scripts/publish.sh
