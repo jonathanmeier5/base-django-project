@@ -14,4 +14,7 @@ if [ "${rc}" != "0" ]; then
     exit ${rc}
 fi;
 
+
+cat ./.pypirc | sed -e s/\${PYPI_USER}/"$PYPI_USER"/ |  sed -e s/\${PYPI_PASSWORD}/"$PYPI_PASSWORD"/ > $HOME/.pypirc
+
 twine upload dist/*${version}*
