@@ -7,4 +7,4 @@ profiles:
 
 tasks:
   publish:
-    command: compose-flow compose run --rm app /bin/bash ./scripts/publish.sh
+    command: compose-flow compose run --rm app bash ../scripts/publish.sh
