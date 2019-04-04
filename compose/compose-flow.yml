@@ -1,4 +1,9 @@
 profiles:
+  prod:
+    - docker-compose.yml
+    - env
+    - publish
+
   local:
     - docker-compose.yml
     - env
